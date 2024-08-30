@@ -1,0 +1,63 @@
+/* src/components/Routine.css */
+
+.routine {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #3a5fcd;
+  color: white;
+}
+
+td {
+  background-color: #f9f9f9;
+}
+
+.highlight {
+  background-color: #ffd700;
+}
+
+tbody tr:nth-child(odd) td {
+  background-color: #e6e6fa;
+}
+
+tbody tr:hover td {
+  background-color: #dcdcdc;
+}
+
+@media screen and (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    margin: 0 0 20px 0;
+  }
+
+  td {
